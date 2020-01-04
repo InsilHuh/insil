@@ -1,0 +1,28 @@
+<html>
+<head>
+  <style type="text/css">
+    .login{background-image: url(http://www.forest.go.kr/newkfsweb/cmm/fms/FileDown.do?atchFileId=FILE_000000010008639&fileSn=0) 
+    width: 600px;
+    height: 300px;
+    color: white;
+  }
+</style>
+    <title>로그인페이지</title>
+    
+</head>
+<body>
+  <div class="login">
+    <h1 class="mytitle">로그인 페이지</h1>
+      <h2 class="mytitle">아이디, 비밀번호를 입력해주세요</h2>
+  </div>
+    <p>
+    	ID: 
+    	<input type="text">
+    </p>
+    <p>
+    	PW: 
+    	<input type="password">   
+   	</p>
+   	<button>로그인하기</button>
+</body>
+</html>
