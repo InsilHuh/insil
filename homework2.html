@@ -1,0 +1,117 @@
+<html>
+
+<head>
+
+	<!-- Webpage Title -->
+    <title>Hello, world!</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- JS -->		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>homework1</title>
+    <style>
+      .mytitle {
+        color: white;
+        background-image: url('https://images.squarespace-cdn.com/content/v1/55fc6077e4b08422c885ee5b/1551283326652-I76OP6NKZAKKR4W6RVSE/ke17ZwdGBToddI8pDm48kN1iVe-CXyxGW5hAvQmUneB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmmV5_8-bAHr7cY_ioNsJS_96lJcdULGsBS9CAmcuQtGATjsbkUTJUVAyL-yn9X22v/Paradise_MapleSQ.jpg?format=500w');
+        background-size: cover;
+        background-position: center;
+        max-width: 500px;
+        margin: auto;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+      }
+	.content {
+  max-width: 500px;
+  margin: auto;
+}
+      .size {
+      width: 300px;
+      }
+     *{ 
+     font-family: 'Nanum Brush Script', cursive;
+      }
+    </style>
+
+    <script>
+      function h1(){
+
+        let name = $('#order_name').val();
+        let address = $('#order_address').val();
+        let number = $('#order_number').val();
+        
+        if(name == ''){
+          alert('이름을 입력하세요');
+        }
+
+        else if(address == ""){
+         alert('주소를 입력하세요');
+        }
+
+        else if (number == ""){
+         alert('전화번호를 입력하세요'); 
+        }
+      }
+
+    </script>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <div class="mytitle">
+    	</div>
+<body>
+    <div class=content>
+      <h1>휴식의자</h1> <h2>가격 : 250,000원</h2>
+      <h6>이 의자는 하루의 피로를 싹 풀어줄 수 있는 효능이 있는 의자입니다. 휴식으로 오늘 하루를 마무리해 보세요!</h6>
+    </div>
+    <p>
+      <div class="input-group mb-3 size content">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+  </div>
+  <input id= "order_name" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+</div>
+    </p>
+    <div class="input-group mb-3 size content">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">수량</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>--수량을 선택하세요--</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+    <p>
+
+    <div class="input-group mb-3 size content">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">주소</span>
+    </div>
+    <input id="order_address" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+    </div>
+
+    </p>
+
+    <div class="input-group mb-3 size content">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">전화번호</span>
+    </div>
+    <input id="order_number" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+    </div>
+
+    </p>
+
+    <button type="button" onclick="h1()" class="btn btn-primary">주문하기</button>
+
+</body>
+</html> 
